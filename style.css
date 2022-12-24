@@ -61,6 +61,9 @@
     --bold-ff:'Big Shoulders Display', cursive;
 }
 /*My CSS*/ 
+body{
+    background-color: var(--light-gray);
+}
 main{
     display: grid;
     grid-template-columns: 1fr;
@@ -128,4 +131,34 @@ button{
     background-color: var(--bg-luxury);
     color: var(--white-p);
     border:1px solid var(--white-p)
+}
+@media (min-width:600px){
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .suvs,.luxury,.sedans{
+        width: 16.25rem;
+        height: 26.563rem;
+        padding: 1.5rem;
+
+    }
+    .sedans{
+        position: relative;
+        bottom:0.5rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    .luxury{
+        border-radius: 0 1rem 1rem 0 ;
+    }
+    .suv-button{
+        margin-top: 4.5rem;
+    }
+    .luxury-button{
+        margin-top: 3.2rem;
+    }
+    .sedan-button{
+        margin-top: 3.7rem;
+    }
 }
