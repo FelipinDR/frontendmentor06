@@ -61,9 +61,6 @@
     --bold-ff:'Big Shoulders Display', cursive;
 }
 /*My CSS*/ 
-div{
-    border: 2px solid black;
-}
 main{
     display: grid;
     grid-template-columns: 1fr;
@@ -72,6 +69,63 @@ main{
 }
 .suvs,.luxury,.sedans{
     width: 15.25rem;
-    height: 20rem;
-    padding: 1.3rem;
+    height: 22rem;
+    padding: 1.5rem;
+}
+.title{
+    font-family: var(--bold-ff);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+p{
+    font-size: 15px;
+    color: var(--white-p);
+    font-family: var(--regular-ff);
+    margin: 1rem 1rem 1rem 0;
+}
+.sedans{
+    background-color: var(--bg-sedans);
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    margin-top: 1rem;
+}
+.suvs{
+    background-color: var(--bg-suvs);
+}
+.luxury{
+    background-color: var(--bg-luxury);
+    border-radius:0 0 0.5rem 0.5rem;
+}
+button{
+    border: none;
+    background-color: var(--light-gray);
+    height: 2.6rem;
+    width: 8rem;
+    border-radius: 2rem;
+    font-family: var(--regular-ff);
+    font-size: 13px;
+}
+.sedan-button{
+    color: var(--bg-sedans);
+}
+.sedan-button:hover{
+    background-color: var(--bg-sedans);
+    color: var(--white-p);
+    border:1px solid var(--white-p)
+}
+.suv-button{
+    color: var(--bg-suvs);
+}
+.suv-button:hover{
+    background-color: var(--bg-suvs);
+    color: var(--white-p);
+    border:1px solid var(--white-p)
+}
+.luxury-button{
+    color: var(--bg-luxury);
+}
+.luxury-button:hover{
+    background-color: var(--bg-luxury);
+    color: var(--white-p);
+    border:1px solid var(--white-p)
 }
